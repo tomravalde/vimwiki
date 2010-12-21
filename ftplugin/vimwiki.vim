@@ -375,7 +375,7 @@ noremap <silent><buffer> - :call vimwiki#RemoveHeaderLevel()<CR>
 function! Vimwiki_toggle_task_status()
 ruby << EOS
   line = VIM::Buffer.current.line 
-  line = line.gsub(/^(\s*)([-✓])/u) { $1 + ( $2 == '-' ? '✓' : '-' ) }
+  line = line.gsub(/^(\s*)([-+])/u) { $1 + ( $2 == '-' ? '+' : '-' ) }
   VIM::Buffer.current.line = line 
 EOS
 endfunction
