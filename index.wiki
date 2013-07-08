@@ -1,0 +1,4 @@
+= My knowledge base =
+	* MyUrgentTasks -- things to be done _yesterday_!!!
+	* ProjectGutenberg.
+	* ScratchPad -- various temporary sruff.
